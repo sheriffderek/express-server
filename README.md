@@ -5,7 +5,7 @@
 
 ## Goals
 
-* [ ] set up a basic local server
+* [x] set up a basic local server
 * [ ] get 1 basic CRUD setup for a general resource (including some database peristance)
 * [ ] get user authorization in place
 * [ ] get a smooth deployment process
