@@ -1,5 +1,6 @@
 const express = require('express');
 const environment = require('dotenv');
+const logger = require('morgan');
 
 const eventRoutes = require('./routes/events');
 
@@ -11,8 +12,10 @@ const server = express();
 const PORT = process.env.PORT || 3000;
 const MODE = process.env.NODE_ENV;
 
+if (process.env.NODE_ENV === 'development') {
+  server.use(logger("dev"))
+}
 
 server.use('/api/v1/events', eventRoutes);
-
 
 server.listen(PORT, console.log(`Server running in ${MODE} mode on port ${PORT}`));
