@@ -6,7 +6,10 @@
 ## Goals
 
 * [x] set up a basic local server
-* [ ] get 1 basic CRUD setup for a general resource (including some database peristance)
+* [ ] get 1 basic CRUD setup for a general resource (including some database peristance)  
+* * [x] setup mongo online, account, cluster, user etc
+* * [x] connect to mongo
+* * [ ] ...
 * [ ] get user authorization in place
 * [ ] get a smooth deployment process
 * [ ] make the API the best it can be (I'm reading 'The design of web apis' & watching a traversy class & reading 'express in action')
